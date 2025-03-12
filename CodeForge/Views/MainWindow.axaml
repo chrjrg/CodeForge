@@ -89,11 +89,10 @@
         <SplitView.Content>
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="32"/> <!-- Change for upper nav row  -->
+                    <RowDefinition Height="40"/> <!-- Change for upper nav row  -->
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Border Grid.Row="1"
-                        CornerRadius="12"
                         Background="#2d2d2d">
                     <ContentControl Content="{Binding CurrentPage}" />
                 </Border>
