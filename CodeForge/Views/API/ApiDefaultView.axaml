@@ -1,0 +1,22 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:admin="clr-namespace:CodeForge.ViewModels.API"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CodeForge.Views.API.ApiDefaultView"
+             x:DataType="admin:ApiDefaultViewModel">
+    <StackPanel Margin="20">
+        <TextBlock Margin="0 20" FontSize="20" FontWeight="Bold">Api's!</TextBlock>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
+            <TextBlock Text="{Binding ButtonClickText}" FontSize="20"/>
+            <Button Content="click"
+                    Command="{Binding TestBindingCommand}"
+                    Padding="5"
+                    MinWidth="50"
+                    MinHeight="30"
+                    FontSize="20"
+                    HorizontalAlignment="Center"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
